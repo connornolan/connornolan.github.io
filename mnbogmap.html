@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["map"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Lat', 'Long', 'Name'],
+          [46.9167, -92.7833, 'Arlbeg'],
+          [47.4333, -92.4333, 'Ely Lake'],
+          [48.4167, -94.0667, 'Fairland'],
+          [47.3667, -94.2333, 'Hole in Bog'],
+          [48.2, -94.3167, 'Lost River'],
+          [47.5, -93.4667, 'Marcell'],
+          [48.5, -94, 'North Black River'],
+          [48.3333, -94.5833, 'Red Lake'],
+        [47.0667, -92.85, 'Toivola']
+        ]);
+
+        var map = new google.visualization.Map(document.getElementById('map_div'));
+        map.draw(data, {showTip: true});
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <div id="map_div" style="width: 800px; height: 600px"></div>
+  </body>
+</html>
