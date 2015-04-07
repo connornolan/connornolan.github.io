@@ -1,9 +1,28 @@
 body {
-	background-color: #C3D7DF;
+	background-color: #F5F5F5;
+	color: #67727A;
 }
 
 h1 {
 	font-family: Futura, sans-serif;
 	font-weight: bold;
 	color: #D75C37;
+	background-color: #C3D7DF
+	
+}
+
+h3 {
+	font-family: Futura, sans-serif;
+	font-weight: bold;
+	color: #6991AC;
+	background-color: #C3D7DF
+	
+}
+
+h5 {
+	font-family: Futura, sans-serif;
+	font-weight: bold;
+	color: #6991AC;
+	background-color: #C3D7DF
+	
 }
